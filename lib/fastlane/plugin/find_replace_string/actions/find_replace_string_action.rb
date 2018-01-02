@@ -37,17 +37,17 @@ module Fastlane
                         env_name: "OLD_STRING",
                         description: "The string that will be replaced in the file",
                         optional: false,
-                    type: String),
+                        is_string: false),
                     FastlaneCore::ConfigItem.new(key: :new_string,
                         env_name: "NEW_STRING",
                         description: "The string that will be injected into the file",
                         optional: false,
-                    type: String),
+                        type: String),
                     FastlaneCore::ConfigItem.new(key: :path_to_file,
                         env_name: "PATH_TO_FILE",
                         description: "Path to the file to be modified",
                         optional: false,
-                    type: String)
+                        type: String)
                 ]
             end
 
